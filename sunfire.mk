@@ -43,6 +43,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.ril.mux.retries=500 \
     persist.ril.mux.sleep=2 \
     ro.telephony.sms_segment_size=160 \
+    ro.telephony.ril.v3=datacall,icccardstatus \
     ro.setupwizard.mode=OPTIONAL \
     ro.telephony.call_ring.multiple=false \
     ro.telephony.call_ring.delay=500 \
