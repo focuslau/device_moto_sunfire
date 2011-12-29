@@ -108,12 +108,12 @@ PRODUCT_COPY_FILES += \
 
 #keyboard files
 PRODUCT_COPY_FILES += \
+    device/moto/sunfire/keylayout/qtouch-obp-ts.kl:system/usr/keylayout/qtouch-obp-ts.kl \
+    device/moto/sunfire/config/qtouch-obp-ts.idc:system/usr/idc/qtouch-obp-ts.idc \
     device/moto/sunfire/keylayout/tegra-kbc.kl:system/usr/keylayout/tegra-kbc.kl \
     device/moto/sunfire/keychars/tegra-kbc.kcm.bin:system/usr/keychars/tegra-kbc.kcm.bin \
     device/moto/sunfire/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
     device/moto/sunfire/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
-    device/moto/sunfire/keylayout/qtouch-obp-ts.kl:system/usr/keylayout/qtouch-obp-ts.kl \
-    device/moto/sunfire/config/qtouch-obp-ts.idc:system/usr/idc/qtouch-obp-ts.idc \
     device/moto/sunfire/keylayout/Motorola_Mobility_Motorola_HD_Dock.kl:system/usr/keylayout/Motorola_Mobility_Motorola_HD_Dock.kl \
     device/moto/sunfire/keylayout/cpcap-key.kl:system/usr/keylayout/cpcap-key.kl \
     device/moto/sunfire/keylayout/evfwd.kl:system/usr/keylayout/evfwd.kl \

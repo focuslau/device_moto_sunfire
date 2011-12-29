@@ -182,13 +182,12 @@ adb pull /system/bin/rild ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
 adb pull /system/bin/pppd ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
 adb pull /system/bin/testpppd ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
 adb pull /system/bin/secclkd ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
-adb pull /system/bin/pppd-ril ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
+cp  pppd-ril ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
 adb pull /system/bin/chat-ril ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
 adb pull /system/bin/ftmipcd ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
 adb pull /system/bin/usbd ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
 adb pull /system/bin/akmd2 ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
 adb pull /system/bin/whisperd ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
-cp  pppd-ril.options ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/ppp/peers
 
 # LP Added----
 

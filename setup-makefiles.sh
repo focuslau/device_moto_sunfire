@@ -37,15 +37,6 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/lib/libaudio.so:system/lib/libaudio.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/lib/libaudiopolicy.so:system/lib/libaudiopolicy.so
 
-# FINGERPRINT
-#PRODUCT_COPY_FILES += \\
-#    vendor/__VENDOR__/__DEVICE__/proprietary/lib/libAuthUDMDrv_1750A100.so:system/lib/libAuthUDMDrv_1750A100.so \\
-#    vendor/__VENDOR__/__DEVICE__/proprietary/lib/libam2app.so:system/lib/libam2app.so \\
-#    vendor/__VENDOR__/__DEVICE__/proprietary/lib/libam2server.so:system/lib/libam2server.so \\
-#    vendor/__VENDOR__/__DEVICE__/proprietary/bin/am2server:system/bin/am2server \\
-#    vendor/__VENDOR__/__DEVICE__/proprietary/app/GfxEngine.apk:system/app/GfxEngine.apk \\
-#    vendor/__VENDOR__/__DEVICE__/proprietary/etc/am2server.pubkey:system/etc/am2server.pubkey \\
-
 # HAL
 PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/lib/hw/gralloc.tegra.so:system/lib/hw/gralloc.tegra.so \\
@@ -129,9 +120,7 @@ vendor/__VENDOR__/__DEVICE__/proprietary/bin/remountpds:system/bin/remountpds \\
 vendor/__VENDOR__/__DEVICE__/proprietary/bin/slateipcd:system/bin/slateipcd \\
 vendor/__VENDOR__/__DEVICE__/proprietary/bin/tcmd:system/bin/tcmd \\
 vendor/__VENDOR__/__DEVICE__/proprietary/bin/tegrastats:system/bin/tegrastats \\
-vendor/__VENDOR__/__DEVICE__/proprietary/bin/vpnclientpm:system/bin/vpnclientpm \\
-vendor/__VENDOR__/__DEVICE__/proprietary/etc/be_movie:system/etc/be_movie \\
-vendor/__VENDOR__/__DEVICE__/proprietary/etc/be_photo:system/etc/be_photo
+vendor/__VENDOR__/__DEVICE__/proprietary/bin/vpnclientpm:system/bin/vpnclientpm
 
 # LIB
 PRODUCT_COPY_FILES += \\
@@ -238,8 +227,6 @@ vendor/__VENDOR__/__DEVICE__/proprietary/bin/slateipcd:system/bin/slateipcd \\
 vendor/__VENDOR__/__DEVICE__/proprietary/bin/tcmd:system/bin/tcmd \\
 vendor/__VENDOR__/__DEVICE__/proprietary/bin/tegrastats:system/bin/tegrastats \\
 vendor/__VENDOR__/__DEVICE__/proprietary/bin/vpnclientpm:system/bin/vpnclientpm
-#vendor/__VENDOR__/__DEVICE__/proprietary/etc/be_movie:system/etc/be_movie \\
-#vendor/__VENDOR__/__DEVICE__/proprietary/etc/be_photo:system/etc/be_photo
 
 # LIB
 PRODUCT_COPY_FILES += \\

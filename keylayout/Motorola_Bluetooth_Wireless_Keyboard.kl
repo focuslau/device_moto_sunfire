@@ -33,9 +33,9 @@ key 105   DPAD_LEFT         WAKE_DROPPED
 key 106   DPAD_RIGHT        WAKE_DROPPED
 key 115   VOLUME_UP         WAKE_DROPPED
 key 114   VOLUME_DOWN       WAKE_DROPPED
+key 113   MUTE
 key 116   POWER             WAKE
 key 212   CAMERA            WAKE_DROPPED
-key 226   MEDIA_POWER         WAKE
 
 key 16    Q                 WAKE_DROPPED
 key 17    W                 WAKE_DROPPED
@@ -99,7 +99,7 @@ key 128   MEDIA_STOP          WAKE
 key 159   MEDIA_FAST_FORWARD  WAKE
 
 key 58    CAPS
-#BEGIN Moto:IKSTABLEFOURV-7809: merge IKOLYMP-4986_krmt43:added mapping of ctrl key to MENU for webtop AIW
+#BEGIN MotoIKSUNFIRE-2863_gwjp47 added mapping of ctrl key to MENU for CTRL X and CTRL V
 key 29   MENU    WAKE_DROPPED
 key 97   MENU    WAKE_DROPPED
 key 63   SEARCH  WAKE_DROPPED
