@@ -36,7 +36,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.ntmodeglobal=true \
     ro.kernel.android.ril=yes \
     persist.ril.mux.noofchannels=10 \
-    persist.radio.reset_on_switch=true \
     persist.ril.mux.ttydevice=/dev/ttyHS3 \
     persist.ril.modem.ttydevice=/dev/ttySPI0 \
     persist.ril.features=0x0C \
