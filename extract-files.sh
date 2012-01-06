@@ -32,19 +32,8 @@ mkdir -p ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/touchpad/22
 mkdir -p ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/permissions
 mkdir -p ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/egl
 mkdir -p ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/hw
-
-# system apps
-#adb pull /system/app/PhoneConfig.apk ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/app/ProgramMenu.apk ../../../vendor/motorola/$DEVICE/proprietary
-#adb pull /system/app/ProgramMenuSystem.apk ../../../vendor/motorola/$DEVICE/proprietaryadb
-
-# fingerprint stuff
-#adb pull /system/bin/am2server ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
-#adb pull /system/app/GfxEngine.apk ../../../vendor/$VENDOR/$DEVICE/proprietary/app
-#adb pull /system/etc/am2server.pubkey ../../../vendor/$VENDOR/$DEVICE/proprietary/etc
-#adb pull /system/lib/libAuthUDMDrv_1750A100.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib
-#adb pull /system/lib/libam2app.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib
-#adb pull /system/lib/libam2server.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib
+mkdir -p ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wimax/certs
+mkdir -p ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wimax/mfg
 
 # system libs
 adb pull /system/lib/libmirror.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib
@@ -272,6 +261,31 @@ adb pull /system/lib/libopencore_player.so ../../../vendor/$VENDOR/$DEVICE/propr
 adb pull /system/lib/libopencore_rtspreg.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib
 adb pull /system/lib/libopencore_rtsp.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib
 
+# WiMax
+cp wimax/RemoteProxy.cfg ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wimax
+cp wimax/macxvi.cfg ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wimax
+cp wimax/macxvi350.bin ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wimax
+cp wimax/wimax_oma_dm.db ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wimax
+cp wimax/wimaxd.conf ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wimax
+cp wimax/certs/443b9c9f.0 ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wimax/certs
+cp wimax/certs/4ef3ec0e.0 ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wimax/certs
+cp wimax/certs/51023c8f.0 ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wimax/certs
+cp wimax/certs/Commercial_device.pem ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wimax/certs
+cp wimax/certs/Commercial_prv_plain_key.pem ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wimax/certs
+cp wimax/certs/TestCA.pem ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wimax/certs
+cp wimax/certs/e1c07118.0 ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wimax/certs
+cp wimax/certs/wimax_server_root.pem ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wimax/certs
+cp wimax/certs/wimax_server_root_ca1.pem ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wimax/certs
+cp wimax/certs/wimax_server_root_ca2.pem ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wimax/certs
+cp wimax/certs/wimax_server_root_ca3.pem ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wimax/certs
+cp wimax/mfg/macxvi.cfg ../../../vendor/$VENDOR/$DEVICE/proprietary/etc/wimax/mfg
+cp bin/wimaxc ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
+cp bin/wimaxd ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
+cp bin/wimax_test.sh ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
+cp lib/libwimax_jni.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib
+cp lib/libwimax_moto.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib
+cp lib/bcmwimax.ko ../../../vendor/$VENDOR/$DEVICE/proprietary/lib
+
 # Pull Stage Fright
 adb pull /system/lib/libstagefrighthw.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib
 
@@ -287,5 +301,11 @@ cp app/MirrorService.apk ../../../vendor/$VENDOR/$DEVICE/proprietary/app/MirrorS
 cp app/ExtDispService.apk ../../../vendor/$VENDOR/$DEVICE/proprietary/app/ExtDispService.apk
 cp lib/libhdmi.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/libhdmi.so
 cp lib/hw/overlay.tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/hw/overlay.tegra.so
+
+# FM Radio
+cp bin/fmradioserver ../../../vendor/$VENDOR/$DEVICE/proprietary/bin
+cp lib/libfmradio_jni.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib
+cp lib/libfmradioplayer.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib
+cp lib/libFMRadio.so ../../../vendor/$VENDOR/$DEVICE/proprietary/lib
 
 ./setup-makefiles.sh

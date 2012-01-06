@@ -1,12 +1,13 @@
 import init.sunfire.usb.rc
 
 on init
-    export EXTERNAL_STORAGE /mnt/sdcard
-    export PHONE_STORAGE /mnt/emmc
+    export EXTERNAL_STORAGE /mnt/emmc
+    export PHONE_STORAGE /mnt/sdcard
     # create mountpoints for storage
     mkdir /mnt/sdcard 0000 system system
     mkdir /mnt/emmc 0000 system system
     symlink /mnt/sdcard /sdcard
+    symlink /mnt/emmc /sd-ext
     # battery driver permissions
     mkdir /pds 0755 root root
     mkdir /osh 0000 root root

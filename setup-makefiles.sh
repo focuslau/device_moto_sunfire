@@ -261,6 +261,34 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/lib/libomx_mp3dec_sharedlibrary.so:system/lib/libomx_mp3dec_sharedlibrary.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/lib/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so
 
+# WiMax
+PRODUCT_COPY_FILES +=  \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/etc/wimax/RemoteProxy.cfg:system/etc/wimax/RemoteProxy.cfg \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/etc/wimax/certs/:system/etc/wimax/certs \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/etc/wimax/macxvi.cfg:system/etc/wimax/macxvi.cfg \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/etc/wimax/macxvi350.bin:system/etc/wimax/macxvi350.bin \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/etc/wimax/mfg/:system/etc/wimax/mfg \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/etc/wimax/wimax_oma_dm.db:system/etc/wimax/wimax_oma_dm.db \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/etc/wimax/wimaxd.conf:system/etc/wimax/wimaxd.conf \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/etc/wimax/certs/443b9c9f.0:system/etc/wimax/certs/443b9c9f.0 \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/etc/wimax/certs/4ef3ec0e.0:system/etc/wimax/certs/4ef3ec0e.0 \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/etc/wimax/certs/51023c8f.0:system/etc/wimax/certs/51023c8f.0 \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/etc/wimax/certs/Commercial_device.pem:system/etc/wimax/certs/Commercial_device.pem \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/etc/wimax/certs/Commercial_prv_plain_key.pem:system/etc/wimax/certs/Commercial_prv_plain_key.pem \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/etc/wimax/certs/TestCA.pem:system/etc/wimax/certs/TestCA.pem \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/etc/wimax/certs/e1c07118.0:system/etc/wimax/certs/e1c07118.0 \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/etc/wimax/certs/wimax_server_root.pem:system/etc/wimax/certs/wimax_server_root.pem \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/etc/wimax/certs/wimax_server_root_ca1.pem:system/etc/wimax/certs/wimax_server_root_ca1.pem \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/etc/wimax/certs/wimax_server_root_ca2.pem:system/etc/wimax/certs/wimax_server_root_ca2.pem \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/etc/wimax/certs/wimax_server_root_ca3.pem:system/etc/wimax/certs/wimax_server_root_ca3.pem \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/etc/wimax/mfg/macxvi.cfg:system/etc/wimax/mfg/macxvi.cfg \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/bin/wimaxc:system/bin/wimaxc \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/bin/wimaxd:system/bin/wimaxd \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/lib/libwimax_jni.so:system/lib/libwimax_jni.so \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/lib/libwimax_moto.so:system/lib/libwimax_moto.so \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/bin/wimax_test.sh:system/bin/wimax_test.sh \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/lib/bcmwimax.ko:system/lib/bcmwimax.ko
+
 # HDMI
 PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/framework/com.motorola.android.iextdispservice.jar:system/framework/com.motorola.android.iextdispservice.jar \\
@@ -268,5 +296,12 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/lib/libmirrorjni.so:system/lib/libmirrorjni.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/app/ExtDispService.apk:system/app/ExtDispService.apk \\
     vendor/__VENDOR__/__DEVICE__/proprietary/app/MirrorService.apk:system/app/MirrorService.apk
+
+# FM Radio
+PRODUCT_COPY_FILES +=  \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/bin/fmradioserver:system/bin/fmradioserver \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/lib/libfmradio_jni.so:system/lib/libfmradio_jni.so \\
+	vendor/__VENDOR__/__DEVICE__/proprietary/lib/libfmradioplayer.so:system/lib/libfmradioplayer.so \\
+        vendor/__VENDOR__/__DEVICE__/proprietary/lib/libFMRadio.so:system/lib/libFMRadio.so
 
 EOF
